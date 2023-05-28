@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Homepage</title>
+</head>
+<body>
+    <h1>Events Management System</h1>
+    <p>{{data}}</p>
+    <p>Users</p>
+    <div>
+        <table>
+            {% for u in users %}
+            <tr><td>{{u}}</td></tr>
+            {% endfor %}
+        </table>
+    </div>
+    <p>Events</p>
+    <div>
+        <table>
+            {% for ev in events %}
+            <tr><td>{{ev}}</td></tr>
+            {% endfor %}
+        </table>
+    </div>
+</body>
+</html>
